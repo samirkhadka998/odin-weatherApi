@@ -7,4 +7,27 @@
 body{
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    background: black;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+input#search, button, .wrapper {
+    font-size: 2rem;
+    padding: 7px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
