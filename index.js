@@ -22,7 +22,6 @@ function LoadNodes() {
 
 function LoadSearch(e) {
   if (e.type === "click" || (e.code && e.type === "keyup" && e.code === "Enter")) {
-    console.log(e)
     let search = document.querySelector('input');
     if (!search.value) return;
     wrapper.hidden = false;
@@ -33,13 +32,11 @@ function LoadSearch(e) {
         wrapper.lastElementChild.textContent = res.error?.message;
       }
       else {
-        console.log(res)
         wrapper.firstElementChild.textContent = res.location.tz_id + " - " + res.location.country;
-        wrapper.lastElementChild.textContent = res.current.condition.text;
+        wrapper.children[1].textContent = res.current.temp_c + "°C / " + res.current.temp_f + "°F "
+        wrapper.lastElementChild.textContent =  res.current.condition.text;
         let img = document.createElement('img');
         img.alt = "weather current icon";
-        // "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
-
         img.src = 'https:' + '//cdn.weatherapi.com/weather/64x64/night/116.png'
         wrapper.lastElementChild.appendChild(img);
         let uplashApiPromise = UplashApi(res.current.condition.text);
@@ -49,7 +46,6 @@ function LoadSearch(e) {
             wrapper.lastElementChild.textContent = result.error?.message;
           }
           else {
-            // document.body.style.background ="url(https://images.unsplash.com/photo-1628018257710-753a94fc106a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1Mjc3ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk5NzMzOTZ8&ixlib=rb-4.0.3&q=80&w=1080)"
             let url = `url(${result.urls.regular})`;
             document.body.style.background = url;
           }

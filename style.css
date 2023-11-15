@@ -11,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 .wrapper {
@@ -24,10 +25,15 @@ body{
 input#search, button, .wrapper {
     font-size: 2rem;
     padding: 7px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .message {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.temp {
+    margin: 20px 0 14px;
 }
