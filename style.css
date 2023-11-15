@@ -5,9 +5,9 @@
 }
 
 body{
-    background: url('https://images.unsplash.com/photo-1532135468830-e51699205b70?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background: url('https://images.unsplash.com/photo-1515686785726-73e2c8f5667c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: 100% 100% !important;
     height: 100vh !important;
     display: flex;
     align-items: center;
