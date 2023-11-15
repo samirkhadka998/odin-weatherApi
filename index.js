@@ -59,7 +59,7 @@ function LoadSearch(e) {
 
   async function WeatherApi(value) {
 
-    const fullResponse = await fetch(`http://api.weatherapi.com/v1/current.json?key=${APIToken}&q=${value}&aqi=no`);
+    const fullResponse = await fetch(`https://api.weatherapi.com/v1/current.json?key=${APIToken}&q=${value}&aqi=no`);
     const body = await fullResponse.json();
     return body;
 
