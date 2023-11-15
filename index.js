@@ -29,6 +29,7 @@ function LoadSearch(e) {
     promise.then(res => {
       if (res.error) {
         wrapper.firstElementChild.textContent = '';
+        wrapper.children[1].textContent = '';
         wrapper.lastElementChild.textContent = res.error?.message;
       }
       else {
