@@ -5,6 +5,7 @@
 }
 
 body{
+    background: url('https://images.unsplash.com/photo-1532135468830-e51699205b70?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat !important;
     background-size: cover !important;
     height: 100vh !important;
@@ -16,7 +17,7 @@ body{
 
 .wrapper {
     background: black;
-    color: #fff;
+    color: #fff !important;
     text-align: center;
     margin: 10px 0;
     padding: 10px;
@@ -26,6 +27,7 @@ input#search, button, .wrapper {
     font-size: 2rem;
     padding: 7px;
     font-family: 'Roboto Slab', serif;
+    color: dimgray;
 }
 
 .message {
